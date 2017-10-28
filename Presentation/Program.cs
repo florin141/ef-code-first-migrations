@@ -1,6 +1,8 @@
 ﻿using DataLayer;
+using DataLayer.Migrations;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +18,7 @@ namespace Presentation
 
 		private static void CreateDatabase()
 		{
+			Database.SetInitializer(new MigrateDatabaseToLatestVersion<TwitterContext, Configuration>());
 			var context = new TwitterContext();
 			context.Database.Initialize(true);
 		}
