@@ -12,5 +12,6 @@ namespace DataLayer
     {
 		public DbSet<Alias> Aliases { get; set; }
 		public DbSet<Tweet> Tweets { get; set; }
-    }
+		public DbSet<TwitterRevenue> TwitterRevenues { get; set; }
+	}
 }

@@ -19,9 +19,11 @@ namespace DomainClasses
 		[Required]
 		public string Name { get; set; }
 
-		public string FirstName { get; set; }
+		//public string FirstName { get; set; }
 
-		public string LastName { get; set; }
+		//public string LastName { get; set; }
+
+		//public string NewProp1 { get; set; }
 
 		[StringLength(10)]
 		public string Experience { get; set; }
