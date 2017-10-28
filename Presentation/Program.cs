@@ -18,7 +18,7 @@ namespace Presentation
 
 		private static void CreateDatabase()
 		{
-			Database.SetInitializer(new MigrateDatabaseToLatestVersion<TwitterContext, Configuration>());
+			//Database.SetInitializer(new MigrateDatabaseToLatestVersion<TwitterContext, Configuration>());
 			var context = new TwitterContext();
 			context.Database.Initialize(true);
 		}

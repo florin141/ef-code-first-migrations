@@ -5,7 +5,7 @@ namespace DataLayer.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    public class Configuration : DbMigrationsConfiguration<DataLayer.TwitterContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<DataLayer.TwitterContext>
     {
         public Configuration()
         {
